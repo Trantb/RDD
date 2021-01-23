@@ -1,6 +1,4 @@
 #### Current Expenses
-df <- read_dta("cosub_place_county_votes_property.dta")
-df$purpose2
 df <- df[df$purpose2 == "current expenses",]
 #Create the running variables
 pctfor <- df$votes_for/(df$votes_against + df$votes_for)
