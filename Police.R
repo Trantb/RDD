@@ -1,4 +1,3 @@
-df <- read_dta("cosub_place_county_votes_property.dta")
 df <- df[df$purpose2 == "police",]
 pctfor <- df$votes_for/(df$votes_against + df$votes_for)
 df <- cbind(df, pctfor)
